@@ -6,7 +6,7 @@
 
 // ⚠️ SET THIS to your GAS deployment URL after deploying GAS
 // GASエディタ → デプロイ → 新しいデプロイ → ウェブアプリ → URLをコピー
-const GAS_ENDPOINT = process.env.GAS_ENDPOINT || "https://script.google.com/macros/s/AKfycbyWhv_1z9aLbWCbtF1Z74i6kTzlmg8317mDfr4o1AwgRt5aVikxt5o7hhKG8rpOjiz58g/exec";
+const GAS_ENDPOINT = process.env.GAS_ENDPOINT || "https://script.google.com/macros/s/AKfycbwlzulqnWQBCotMShRUgbshl86SSztSFrKgX8Y59lQrzu3p-ZREQ7Ie8rwXbn2ZTnaVJQ/exec";
 
 module.exports = async function handler(req, res) {
   // CORS headers — allow LINE LIFF / browsers to POST
