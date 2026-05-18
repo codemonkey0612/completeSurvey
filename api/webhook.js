@@ -1,12 +1,9 @@
 // api/webhook.js — Vercel Serverless Function
-// ─────────────────────────────────────────────────────────────
 // IMPORTANT: CommonJS syntax only (require/module.exports)
 // DO NOT use import/export — that causes the ESM compile error
-// ─────────────────────────────────────────────────────────────
-
 // ⚠️ SET THIS to your GAS deployment URL after deploying GAS
 // GASエディタ → デプロイ → 新しいデプロイ → ウェブアプリ → URLをコピー
-const GAS_ENDPOINT = process.env.GAS_ENDPOINT || "https://script.google.com/macros/s/AKfycbwlzulqnWQBCotMShRUgbshl86SSztSFrKgX8Y59lQrzu3p-ZREQ7Ie8rwXbn2ZTnaVJQ/exec";
+const GAS_ENDPOINT = process.env.GAS_ENDPOINT || "https://script.google.com/macros/s/AKfycbyvhSHKAf6u8lQpclH_AKLqZKuh02i6XBceSvAS1DaK6BKMwHjpwomhSSGboF6HbnfYfQ/exec";
 
 module.exports = async function handler(req, res) {
   // CORS headers — allow LINE LIFF / browsers to POST
